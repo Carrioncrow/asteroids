@@ -2,7 +2,7 @@ from circleshape import CircleShape
 from constants import *
 import pygame
 
-class Shot(CircleShape, pygame.sprite.Sprite):
+class Shot(CircleShape):
     def __init__(self, x, y):
         super().__init__(x, y, SHOT_RADIUS)
         self.velocity = pygame.Vector2(0, 0)
